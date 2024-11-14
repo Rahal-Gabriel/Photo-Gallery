@@ -2,7 +2,7 @@ import Link from "next/link";
 import { db } from "../server/db";
 import { headers } from "next/headers";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 const mockUrls = [
 
