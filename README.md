@@ -8,7 +8,7 @@
 - [X]  actualy setup a dtabase (w/ vercel postgress)
 - [x] Attach database to ui 
 - [x] Add authentication (w/ clerk)
-- [] add image upload
+- [x] add image upload
 - [] taint
 - [] use next image component
 - [] error managemet (w/ sentry)
