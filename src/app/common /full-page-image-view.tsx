@@ -8,8 +8,8 @@ export async function FullPageImageView(props: {id: number}) {
         <img src={image.url} className= 'flex-shrink  object-contain'/>
         </div>
    
-    <div className="w-48 flex flex-col flex-shrink-0 border-1">
-        <div className="text-x1 font-bold">{image.name}</div>
+    <div className="flex h-full w-56 flex-shrink-0 flex-col border-l">
+        <div className="border-b p-2 text-center text-xl">{image.name}</div>
     </div>
     </div>
     )
