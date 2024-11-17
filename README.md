@@ -12,7 +12,7 @@
 - [x] taint
 - [x] use next image component
 - [x] error managemet (w/ sentry)
-- [] routing/image page (parallel route )
+- [x] routing/image page (parallel route )
 - [] Delete button (w/ server actions)
 - [] analitycs (posthog)
 - [] ratelimiting (upstash)

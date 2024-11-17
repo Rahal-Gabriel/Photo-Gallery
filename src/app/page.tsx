@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 export default async function Images() {
   try {
     const images = await getMyImages();
+    const maxLength = 20; // Defina o número máximo de caracteres
 
     return (
       <main className="">
@@ -15,14 +16,20 @@ export default async function Images() {
           {images.map((image) => (
             <div key={image.id} className="flex h-48 w-48 flex-col">
               <Link href={`/img/${image.id}`}>
-              <Image 
-              src={image.url} 
-              style={{ objectFit: "contain"}} 
-              width={480}
-              height={480}
-              alt={image.name}  />
+                <div className="relative h-48 w-48">
+                  <Image 
+                    src={image.url} 
+                    layout="fill"
+                    objectFit="cover"
+                    alt={image.name}  
+                  />
+                </div>
               </Link>
-              <div className="text-sm">{image.name}</div>
+              <div className="text-sm">
+                {image.name.length > maxLength 
+                  ? `${image.name.slice(0, maxLength)}...` 
+                  : image.name}
+              </div>
             </div>
           ))}
         </div>
