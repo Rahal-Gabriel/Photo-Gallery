@@ -11,7 +11,7 @@
 - [x] add image upload
 - [x] taint
 - [x] use next image component
-- [] error managemet (w/ sentry)
+- [x] error managemet (w/ sentry)
 - [] routing/image page (parallel route )
 - [] Delete button (w/ server actions)
 - [] analitycs (posthog)

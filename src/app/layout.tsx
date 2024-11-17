@@ -21,7 +21,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+  modal,
+}: Readonly<{ 
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}>) {
   return (
     <ClerkProvider>
        <NextSSRPlugin
@@ -37,6 +41,8 @@ export default function RootLayout({
       <body className="flex flex-col gap-4">
         <TopNav />
         {children}
+        {modal}
+        <div id="modal-root" />
         </body>
     </html> 
     
